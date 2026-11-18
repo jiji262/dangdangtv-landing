@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Ground shadow pulsing with stride -->
+  <ellipse cx="58" cy="100" rx="28" ry="3.8" fill="#000000" fill-opacity="0.36">
+    <animate attributeName="rx" values="24;31;24" dur="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.26;0.42;0.26" dur="0.9s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Speed dust puffs behind hind paws -->
+  <circle cx="24" cy="96" r="3.2" fill="#F4F1EA" fill-opacity="0.55">
+    <animate attributeName="cx" values="30;12" dur="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3.4;1.0" dur="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.6;0" dur="0.9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="20" cy="94" r="2.5" fill="#C6E34A" fill-opacity="0.5">
+    <animate attributeName="cx" values="28;9" dur="0.9s" begin="0.45s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="2.8;0.8" dur="0.9s" begin="0.45s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.55;0" dur="0.9s" begin="0.45s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Chased signal spark ahead -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 -2; 3 2; 0 -2" dur="0.9s" repeatCount="indefinite"/>
+    <circle cx="108" cy="46" r="4.8" fill="#C6E34A" fill-opacity="0.28"/>
+    <circle cx="108" cy="46" r="2.2" fill="#C6E34A"/>
+  </g>
+
+  <!-- Galloping Tuxedo Cat -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 -4; 0 3.5; 0 -4" dur="0.9s" repeatCount="indefinite"/>
+
+    <!-- Far hind leg & white sock -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-26 40 68; 28 40 68; -26 40 68" dur="0.9s" repeatCount="indefinite"/>
+      <path d="M 40 68 Q 35 80 39 91" stroke="#101014" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="40" cy="92.5" rx="5" ry="3.3" fill="#DFDDD6"/>
+    </g>
+
+    <!-- Far foreleg & white sock -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="28 75 68; -26 75 68; 28 75 68" dur="0.9s" repeatCount="indefinite"/>
+      <path d="M 75 68 Q 79 80 76 91" stroke="#101014" stroke-width="6.8" stroke-linecap="round"/>
+      <ellipse cx="77" cy="92.5" rx="5" ry="3.3" fill="#DFDDD6"/>
+    </g>
+
+    <!-- Streaming black tail -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-8 33 63; 9 33 63; -8 33 63" dur="0.9s" repeatCount="indefinite"/>
+      <path d="M 33 63 C 22 61 16 52 11 41" stroke="#F4F1EA" stroke-opacity="0.74" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 33 63 C 22 61 16 52 11 41" stroke="#18181C" stroke-width="7.4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Sleek black torso + white chest bib & belly -->
+    <path d="M 33 60 C 46 50 63 49 77 57 C 84 60 85 70 76 74 C 63 76 47 75 34 72 C 28 69 28 62 33 60 Z"
+      fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.76" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 43 72.5 Q 56 75.5 70 73.5 L 68 70 Q 56 71.5 45 70 Z" fill="#F6F4EE"/>
+    <path d="M 70 59 C 78 58 84 63 82 70 C 80 74 74 75 69 73 C 66 69 67 63 70 59 Z" fill="#F6F4EE"/>
+
+    <!-- Near hind leg & snowy white mitten -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-18 37 69; 32 37 69; -18 37 69" dur="0.9s" begin="0.12s" repeatCount="indefinite"/>
+      <path d="M 37 69 Q 32 81 36 92" stroke="#F4F1EA" stroke-opacity="0.7" stroke-width="9.2" stroke-linecap="round"/>
+      <path d="M 37 69 Q 32 81 36 92" stroke="#18181C" stroke-width="7.2" stroke-linecap="round"/>
+      <ellipse cx="37.5" cy="93.5" rx="5.4" ry="3.5" fill="#F6F4EE" stroke="#242429" stroke-width="1.1"/>
+    </g>
+
+    <!-- Near foreleg & snowy white mitten -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="32 73 69; -22 73 69; 32 73 69" dur="0.9s" begin="0.12s" repeatCount="indefinite"/>
+      <path d="M 73 69 Q 77 81 74 92" stroke="#F4F1EA" stroke-opacity="0.7" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 73 69 Q 77 81 74 92" stroke="#18181C" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="75.5" cy="93.5" rx="5.4" ry="3.5" fill="#F6F4EE" stroke="#242429" stroke-width="1.1"/>
+    </g>
+
+    <!-- Trailing golden "福" tag -->
+    <g transform="rotate(-18 76 63)">
+      <circle cx="76" cy="63" r="1.3" fill="#A8383B"/>
+      <rect x="72.5" y="63.5" width="6.4" height="6.2" rx="2.4" fill="#ECC04B" stroke="#9E711B" stroke-width="0.8"/>
+      <path d="M 75.7 65 L 75.7 68.3 M 74.2 66.6 L 77.2 66.6" stroke="#7A500D" stroke-width="0.85" stroke-linecap="round"/>
+    </g>
+
+    <!-- Side-3/4 Tuxedo Head -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-3 80 54; 3.5 80 54; -3 80 54" dur="0.9s" repeatCount="indefinite"/>
+      <path d="M 78 38 L 83 25 Q 85.5 23 86.5 26.5 L 89 38 Z" fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.72" stroke-width="1.6"/>
+      <path d="M 70 49 C 70 39 78 35 87 36 C 95 37 99 44 98 52 C 97 58 90 61 82 61 C 74 61 70 56 70 49 Z"
+        fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.78" stroke-width="2"/>
+      <path d="M 73 41 L 74.5 24.5 Q 76.5 22 79 25.5 L 84 37.5 Z" fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.78" stroke-width="1.8"/>
+      <path d="M 75.2 38.5 L 76 28 L 81.8 36.8 Z" fill="#62474A"/>
+
+      <!-- White nose bridge & muzzle -->
+      <path d="M 89.5 40.5 C 94.5 42.5 98.8 46.8 98.5 52 C 98 57.5 92.5 60.8 84 60.5 C 80.5 59.5 80.5 55.5 84.5 53.5 C 88.5 51.5 89 45.5 89.5 40.5 Z"
+        fill="#F6F4EE"/>
+
+      <!-- Olive-gold eye -->
+      <ellipse cx="86.8" cy="47.2" rx="4.5" ry="4.2" fill="#C6CB67"/>
+      <ellipse cx="87.8" cy="47.2" rx="1.8" ry="3.4" fill="#121215"/>
+      <circle cx="86.9" cy="45.6" r="1.15" fill="#FFFFFF"/>
+
+      <!-- Pink nose & whiskers -->
+      <circle cx="97.5" cy="49.5" r="1.8" fill="#E59396"/>
+      <path d="M 92 54.5 Q 84 54 76 56 M 92 56.8 Q 84 57.8 77 60.5" stroke="#F6F4EE" stroke-opacity="0.85" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

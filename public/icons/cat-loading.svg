@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Ground shadow -->
+  <ellipse cx="58" cy="105.5" rx="28" ry="4.2" fill="#000000" fill-opacity="0.38"/>
+
+  <!-- Orbiting signal firefly -->
+  <g>
+    <circle cx="60" cy="9.5" r="5.2" fill="#C6E34A" fill-opacity="0.26">
+      <animateTransform attributeName="transform" type="translate"
+        values="-20 2; 0 -2; 20 2; 0 -2; -20 2" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="9.5" r="2.4" fill="#C6E34A">
+      <animateTransform attributeName="transform" type="translate"
+        values="-20 2; 0 -2; 20 2; 0 -2; -20 2" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Sinuous black tail -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="-9 75 95; 10 75 95; -9 75 95" dur="2.4s" repeatCount="indefinite"/>
+    <path d="M 75 95 C 94 93 102 76 97 58 C 93 45 96 35 101 28"
+      stroke="#F4F1EA" stroke-opacity="0.72" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 75 95 C 94 93 102 76 97 58 C 93 45 96 35 101 28"
+      stroke="#18181C" stroke-width="8.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sitting tuxedo black body -->
+  <path d="M 41 63 C 31 71 28 87 34 98 C 39 102.5 75 102.5 80 98 C 85 89 84 72 76 63 Z"
+    fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.72" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Peeking left hind white paw -->
+  <path d="M 33 97.5 C 32.5 93.5 43.5 93.5 44 98.5 C 44 102 33.5 102 33 97.5 Z"
+    fill="#F6F4EE" stroke="#242429" stroke-width="1.2"/>
+  <path d="M 38 97.5 L 37.8 101.2" stroke="#BDB7AC" stroke-width="1.1" stroke-linecap="round"/>
+
+  <!-- Lower chest white diamond tuft -->
+  <path d="M 60 80 C 63.5 83.5 65 87.5 60 93.5 C 55 87.5 56.5 83.5 60 80 Z" fill="#F6F4EE"/>
+
+  <!-- Fluffy scalloped white chest bib -->
+  <path d="M 42 64.5 C 40 69 41.5 74 45 76 L 47 73.8 C 48.5 77.2 51.5 79.5 54.5 80.5 L 55.8 78.2 C 57.5 80.8 59 82.2 60.5 82.5 C 62.5 82 64.5 80.2 66 77.8 L 67.4 79.8 C 70.8 78.5 73.5 76 75 73 L 76.8 74.8 C 79.5 72 80 67.5 77.5 64.5 Z"
+    fill="#F6F4EE"/>
+
+  <!-- Golden "福" charm tag under left chin -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="-7 52.5 67.5; 7 52.5 67.5; -7 52.5 67.5" dur="2.4s" repeatCount="indefinite"/>
+    <circle cx="52.5" cy="67.8" r="1.4" fill="#A8383B"/>
+    <rect x="49" y="68.2" width="7" height="6.8" rx="2.6" fill="#ECC04B" stroke="#9E711B" stroke-width="0.9"/>
+    <circle cx="51" cy="70" r="1" fill="#FFF6CF"/>
+    <path d="M 52.5 69.8 L 52.5 73.6 M 50.8 71.6 L 54.2 71.6" stroke="#7A500D" stroke-width="0.9" stroke-linecap="round"/>
+  </g>
+
+  <!-- Alternating kneading black forelegs with snowy-white paws -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 -2.5; 0 0; 0 -2.5" dur="1.2s" repeatCount="indefinite"/>
+    <path d="M 44.5 81 L 46 98.5 L 57.5 98.5 L 58.2 82 Z" fill="#18181C"/>
+    <path d="M 44.5 98.5 C 44 94.2 58.5 94.2 58.5 99 C 58.5 103.2 44.5 103.2 44.5 98.5 Z"
+      fill="#F6F4EE" stroke="#242429" stroke-width="1.2"/>
+    <path d="M 49.3 98.2 L 49.3 102.3 M 53.8 98.2 L 53.8 102.3"
+      stroke="#BDB7AC" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 -2.5; 0 0" dur="1.2s" repeatCount="indefinite"/>
+    <path d="M 61.8 82 L 62.5 98.5 L 74 98.5 L 75.5 81 Z" fill="#18181C"/>
+    <path d="M 61.5 99 C 61.5 94.2 76 94.2 75.5 98.5 C 75.5 103.2 61.5 103.2 61.5 99 Z"
+      fill="#F6F4EE" stroke="#242429" stroke-width="1.2"/>
+    <path d="M 66.2 98.2 L 66.2 102.3 M 70.7 98.2 L 70.7 102.3"
+      stroke="#BDB7AC" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tuxedo cat head: black cap & ears, asymmetric white blaze & wide right cheek muzzle -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="-5 60 65; 5 60 65; -5 60 65" dur="2.4s" repeatCount="indefinite"/>
+    <path d="M 60 26.5 Q 52.5 26.2 46.5 28.8 L 33.5 14.5 Q 29.8 12.2 29.2 17 L 30.8 38.5 C 24.8 45.2 24.5 56 32 62.5 C 39.2 68.5 49 70 60 70 C 71 70 80.8 68.5 88 62.5 C 95.5 56 95.2 45.2 89.2 38.5 L 90.8 16 Q 90.2 11.2 86.2 13.8 L 73 28.8 Q 67.5 26.2 60 26.5 Z"
+      fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.78" stroke-width="2.1" stroke-linejoin="round"/>
+    <path d="M 34.5 36.5 L 33.2 19.5 L 44.5 30.5 L 41.2 31.8 L 43 33.8 L 39.5 34.5 Z" fill="#62474A"/>
+    <path d="M 85.5 36.5 L 86.8 18.8 L 75.2 30.5 L 78.5 31.8 L 76.8 33.8 L 80.2 34.5 Z" fill="#62474A"/>
+
+    <!-- Asymmetric white nose blaze & right-swept tuxedo muzzle -->
+    <path d="M 59.2 34.8 C 61.5 39.2 62.8 44.2 63.6 49.5 C 64.6 53.5 74 53.8 85.8 51.4 C 88.4 55 87.2 60.8 82.2 64.6 C 75.5 68.8 68 69.8 60 69.8 C 51 69.8 43.5 68.2 39 65.2 C 36.5 62.8 37.5 59.8 40.8 58.2 C 47.2 55.4 54.4 54 55.2 49.5 C 56 44.2 57.2 39.2 59.2 34.8 Z"
+      fill="#F6F4EE"/>
+
+    <!-- White eyebrow whiskers -->
+    <path d="M 53 41.5 Q 48.5 33.5 40.5 30.5 M 51.5 43 Q 46 37.5 38.5 36.5 M 66.5 41.5 Q 71 33.5 79 30.5 M 68 43 Q 73.5 37.5 81 36.5"
+      stroke="#F6F4EE" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Olive-gold eyes -->
+    <path d="M 38.5 48.8 C 38.5 41.6 53.5 41.6 53.5 48.8 C 53.5 55.8 38.5 55.8 38.5 48.8 Z" fill="#C6CB67"/>
+    <path d="M 65.5 48.8 C 65.5 41.6 80.5 41.6 80.5 48.8 C 80.5 55.8 65.5 55.8 65.5 48.8 Z" fill="#C6CB67"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="-2.1 -0.5; 2.1 -0.5; -2.1 -0.5" dur="2.4s" repeatCount="indefinite"/>
+      <ellipse cx="46" cy="48.8" rx="2.4" ry="5" fill="#121215"/>
+      <ellipse cx="73" cy="48.8" rx="2.4" ry="5" fill="#121215"/>
+      <circle cx="44.8" cy="46.6" r="1.45" fill="#FFFFFF"/>
+      <circle cx="71.8" cy="46.6" r="1.45" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Soft pink nose & dark smile on white muzzle -->
+    <path d="M 57.1 55.4 Q 59.8 54 62.5 55.4 L 59.8 58.6 Z" fill="#E59396"/>
+    <path d="M 55.3 60.8 Q 57.8 63 59.8 59.6 Q 61.8 63 64.3 60.8"
+      stroke="#26262C" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Long white cheek whiskers -->
+    <path d="M 42 58.5 Q 28 56.5 15 58 M 43 61.2 Q 29 61.5 16 64.5 M 45 63.5 Q 32 66 21 70 M 77 57.5 Q 91 55.5 104 57 M 76 60.5 Q 90 60.8 103 63.8 M 74 63 Q 87 65.5 98 69.5"
+      stroke="#F6F4EE" stroke-opacity="0.82" stroke-width="1.35" stroke-linecap="round"/>
+  </g>
+</svg>

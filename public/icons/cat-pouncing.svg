@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Ground shadow -->
+  <ellipse cx="48" cy="101" rx="26" ry="3.8" fill="#000000" fill-opacity="0.36">
+    <animate attributeName="cx" values="46;46;64;46" keyTimes="0;0.46;0.64;1" dur="2.1s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="26;27;18;26" keyTimes="0;0.46;0.64;1" dur="2.1s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Fluttering golden-lime butterfly teaser -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="95 36; 95 34; 99 24; 95 36" keyTimes="0;0.45;0.65;1" dur="2.1s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="9" fill="#C6E34A" fill-opacity="0.18"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale"
+        values="1 1; 1 0.35; 1 1" dur="0.26s" repeatCount="indefinite"/>
+      <path d="M 0 0 C -9 -10 -14 -2 -4 3 C -11 7 -6 12 0 4 Z" fill="#C6E34A"/>
+      <path d="M 0 0 C 9 -10 14 -2 4 3 C 11 7 6 12 0 4 Z" fill="#ECC04B"/>
+    </g>
+  </g>
+
+  <!-- Crouching, butt-wiggling & pouncing Tuxedo Cat -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 1; 18 -23; 0 0" keyTimes="0;0.46;0.64;1" dur="2.1s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" additive="sum"
+      values="2 48 84; -2 48 84; -22 54 74; 2 48 84" keyTimes="0;0.46;0.64;1" dur="2.1s" repeatCount="indefinite"/>
+
+    <!-- Twitching black tail -->
+    <path d="M 27 79 C 16 76 11 65 15 53" stroke="#F4F1EA" stroke-opacity="0.74" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 27 79 C 16 76 11 65 15 53" stroke="#18181C" stroke-width="7.4" stroke-linecap="round"/>
+
+    <!-- Crouched/pouncing tuxedo torso -->
+    <path d="M 26 74 C 36 63 54 63 67 71 C 73 75 73 85 65 89 C 52 92 36 92 27 87 C 22 84 22 77 26 74 Z"
+      fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.76" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 38 89 Q 51 92 63 89 L 61 85 Q 50 87 40 85 Z" fill="#F6F4EE"/>
+    <path d="M 61 72 C 69 72 74 77 72 84 C 70 88 64 89 59 87 Z" fill="#F6F4EE"/>
+
+    <!-- Snowy white hind & front paws -->
+    <ellipse cx="32" cy="94" rx="6.5" ry="3.8" fill="#F6F4EE" stroke="#242429" stroke-width="1.2"/>
+    <path d="M 63 84 Q 72 88 78 92" stroke="#18181C" stroke-width="7.2" stroke-linecap="round"/>
+    <ellipse cx="80" cy="93" rx="6" ry="3.8" fill="#F6F4EE" stroke="#242429" stroke-width="1.2"/>
+
+    <!-- Golden "福" charm tag -->
+    <circle cx="67" cy="77" r="1.3" fill="#A8383B"/>
+    <rect x="63.8" y="77.5" width="6.2" height="6" rx="2.2" fill="#ECC04B" stroke="#9E711B" stroke-width="0.8"/>
+
+    <!-- Focused Tuxedo Head -->
+    <path d="M 62 63 C 62 52 70 48 80 49 C 88 50 92 57 91 65 C 90 71 83 74 74 74 C 66 74 62 69 62 63 Z"
+      fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.78" stroke-width="2"/>
+    <path d="M 66 54 L 67 38 Q 69 36 72 39 L 76 50 Z" fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.78" stroke-width="1.8"/>
+    <path d="M 75 51 L 80 37 Q 82.5 35.5 84 39 L 86 51 Z" fill="#18181C" stroke="#F4F1EA" stroke-opacity="0.74" stroke-width="1.6"/>
+    <path d="M 68 51.5 L 68.8 41.5 L 74.2 50 Z" fill="#62474A"/>
+    <path d="M 82.5 53.5 C 87.5 55.5 91.5 59.8 91.2 65 C 90.8 70.5 85 73.5 77 73.2 C 73.5 72.2 73.5 68.2 77.5 66.2 C 81.5 64.2 82 58.5 82.5 53.5 Z"
+      fill="#F6F4EE"/>
+    <ellipse cx="79.5" cy="59.8" rx="4.6" ry="4.4" fill="#C6CB67"/>
+    <ellipse cx="80.6" cy="59.4" rx="2.2" ry="3.7" fill="#121215"/>
+    <circle cx="79.6" cy="57.8" r="1.2" fill="#FFFFFF"/>
+    <circle cx="90.2" cy="62.2" r="1.8" fill="#E59396"/>
+  </g>
+</svg>

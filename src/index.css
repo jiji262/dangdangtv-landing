@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: oklch(65% 0.2 30);
+  --primary-foreground: oklch(98% 0 0);
+  --background: oklch(98% 0.01 85);
+  --foreground: oklch(20% 0.02 85);
+  --card: oklch(100% 0 0);
+  --card-foreground: oklch(20% 0.02 85);
+  --secondary: oklch(90% 0.1 150);
+  --secondary-foreground: oklch(25% 0.05 150);
+  --muted: oklch(93% 0.01 85);
+  --muted-foreground: oklch(46% 0.02 85);
+  --accent: oklch(92% 0.05 300);
+  --accent-foreground: oklch(30% 0.1 300);
+  --border: oklch(20% 0.02 85);
+  --ring: oklch(65% 0.2 30);
+  --font-sans: "Nunito", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.dark {
+  --primary: oklch(72% 0.2 145);
+  --primary-foreground: oklch(12% 0.08 145);
+  --background: oklch(12% 0.02 260);
+  --foreground: oklch(93% 0.01 260);
+  --card: oklch(15.5% 0.03 260);
+  --card-foreground: oklch(93% 0.01 260);
+  --secondary: oklch(24% 0.05 260);
+  --secondary-foreground: oklch(93% 0.01 260);
+  --muted: oklch(19% 0.03 260);
+  --muted-foreground: oklch(66% 0.04 260);
+  --accent: oklch(24% 0.05 260);
+  --accent-foreground: oklch(93% 0.01 260);
+  --border: oklch(30% 0.05 260);
+  --ring: oklch(72% 0.2 145);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+.shadow-hard-sm {
+  box-shadow: 2px 2px 0px 0px var(--border);
+}
+
+.shadow-hard {
+  box-shadow: 4px 4px 0px 0px var(--border);
+}
+
+.shadow-hard-lg {
+  box-shadow: 8px 8px 0px 0px var(--border);
+}
+
+.btn-brutal {
+  border: 2px solid var(--border);
+  box-shadow: 4px 4px 0px 0px var(--border);
+  transition: transform 0.16s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.16s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.16s ease;
+}
+
+.btn-brutal:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px var(--border);
+}
+
+.btn-brutal-sm {
+  border: 2px solid var(--border);
+  box-shadow: 2px 2px 0px 0px var(--border);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-brutal-sm:hover {
+  transform: translate(1.5px, 1.5px);
+  box-shadow: 0px 0px 0px 0px var(--border);
+}
+
+.card-brutal {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 2px solid var(--border);
+  box-shadow: 4px 4px 0px 0px var(--border);
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card-brutal-lift:hover {
+  transform: translate(-2px, -4px);
+  box-shadow: 6px 8px 0px 0px var(--border);
+}
+
+.hero-grid-bg {
+  background-image: radial-gradient(color-mix(in oklab, var(--border) 45%, transparent) 1.25px, transparent 1.25px);
+  background-size: 26px 26px;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4.2s ease-in-out infinite;
+}
