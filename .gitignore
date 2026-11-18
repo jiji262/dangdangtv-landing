@@ -3,4 +3,6 @@ dist
 dist-ssr
 .vercel
 *.local
+*.tsbuildinfo
 .DS_Store
+.env*
