@@ -146,7 +146,7 @@ export const COPY: Record<Lang, CopyPack> = {
       titleLine1: '始于电视实机，',
       titleLine2: '每一帧都是真实运行画面。',
       subtitle:
-        '首页与短剧页来自海信电视实机（Android 11，Modern 包）；多维筛选、播放器、设置与桌面来自 Android TV 实跑环境。点击画面即可全屏放大检视细节。',
+        '首页与短剧页来自海信电视实机（Android 11，Modern 包）；多维筛选、设置与桌面来自 Android TV 实跑环境。点击画面即可全屏放大检视细节。',
       zoomHint: '点击放大查看高清原图',
       prev: '上一张',
       next: '下一张',
@@ -177,15 +177,6 @@ export const COPY: Record<Lang, CopyPack> = {
           title: '专为方向键设计的多行分类筛选',
           desc: '切换电影、电视剧、综艺、动漫后自动展开「类型 / 地区 / 年份」条件行，无需弹出繁琐侧边抽屉，遥控器上下左右四向移动即可秒筛片库。',
           highlights: ['类型 · 地区 · 年份三级联动', '高对比度青柠绿焦点态指示', '零层级弹窗，焦点路径清晰'],
-        },
-        {
-          id: 'player-preview',
-          src: '/screenshots/player-preview.png',
-          tag: '播放 · Media3 内核',
-          device: 'Android TV 14 实跑截图',
-          title: '沉浸式大屏播放控制栏与多线路容错',
-          desc: '基于 AndroidX Media3 打造，底部悬浮胶囊按钮直达「下一集、选集、真实源名切换、倍速播放、画面比例」；播放失败支持自动换线恢复。',
-          highlights: ['展示真实线路名称，一键切源', '0.75x–2.0x 倍速与多种画面比例', '播放失败自动换线与超时恢复'],
         },
         {
           id: 'settings-preview',
@@ -390,7 +381,7 @@ export const COPY: Record<Lang, CopyPack> = {
       titleLine1: 'Captured on Real TVs.',
       titleLine2: 'Every Pixel from Actual Runs.',
       subtitle:
-        'Home and Short Drama screens are captured directly from a real Hisense Android 11 TV (Modern flavor); Filters, Player, Settings, and Launcher are captured from Android TV 14 runs. Click any screen to inspect full-size.',
+        'Home and Short Drama screens are captured directly from a real Hisense Android 11 TV (Modern flavor); Filters, Settings, and Launcher are captured from Android TV 14 runs. Click any screen to inspect full-size.',
       zoomHint: 'Click to inspect full-res capture',
       prev: 'Prev',
       next: 'Next',
@@ -421,15 +412,6 @@ export const COPY: Record<Lang, CopyPack> = {
           title: 'Inline Multi-Row D-Pad Category Filters',
           desc: 'Filter Movies, Series, Variety, and Anime by Genre, Region, and Year right inline—no awkward side drawers, effortless four-way D-Pad navigation.',
           highlights: ['Genre · Region · Year inline rows', 'High-contrast lime focus indicator', 'Zero modal traps for TV remotes'],
-        },
-        {
-          id: 'player-preview',
-          src: '/screenshots/player-preview.png',
-          tag: 'Playback · Media3',
-          device: 'Android TV 14 Capture',
-          title: 'Immersive Media3 Player & Multi-Route Failover',
-          desc: 'Powered by AndroidX Media3 with quick pills for Next Episode, Episodes, Real Source Switching, Playback Speed, and Aspect Ratio—plus automatic route recovery.',
-          highlights: ['Real route names with 1-click switch', 'Playback speed & aspect ratio controls', 'Automatic route failover on error'],
         },
         {
           id: 'settings-preview',
